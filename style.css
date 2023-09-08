@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #6a6a6a;
+}
+.lin{
+    width:100%;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    top:0;
+    right: 0;
+    background:linear-gradient(to right,red,blueviolet);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode:forwards; */
+    animation-timing-function: linear;
+    animation-name: ziad;
+    
+}
+@keyframes ziad {
+    0%{
+     transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+}
+}
+.lin2{
+    /* margin:50px; */
+    width: 5px;
+    height: 100%;
+    background:linear-gradient(to top,red,blueviolet);
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode:forwards; */
+    animation-timing-function: linear;
+    animation-name: ziad2;
+    animation-delay: 1s;
+   
+}
+@keyframes ziad2{
+    0%{
+        transform: translateY(100%);
+       
+    }
+    100%{
+        transform: translateY(-100%);
+      
+    }
+}.lin4{  width:100%;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background:linear-gradient(to left,red,blueviolet);
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode:forwards */
+    animation-timing-function: linear;
+    animation-name: ziad4;
+    
+}
+@keyframes ziad4 {
+    0%{
+     transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+}
+}
+.lin3{
+    width: 5px;
+    height: 100%;
+    background:linear-gradient(to bottom,red,blueviolet);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode:forwards; */
+    animation-timing-function: linear;
+    animation-name: ziad3;
+    animation-delay: 1s;
+    
+}
+@keyframes ziad3 {
+    0%{
+        transform: translateY(-100%);
+       
+    }
+    100%{
+        transform: translateY(100%);
+      
+    }}
+
+
+.box{
+    /* background-color: #0a0202; */
+    width: 400px;
+    height: 200px;
+    /* margin:200px 360px; */
+    text-align: center;
+    line-height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 50px auto;
+}
+p{
+    color: red;
+    font-size: 152px;
+}
+
+
+.squre{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 0px px 0px 0px;
+    border-radius: 15px;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transition: transform 0.5s ease;
+animation-name: roo;
+/* background:linear-gradient(to left,red,blueviolet); */  
+}
+.squre:hover{
+    animation-play-state: paused;
+    transform: scale(2);
+    cursor:pointer;
+}
+
+@keyframes roo
+{0%{
+    translate: 0 0;
+    rotate: 0deg;
+    background-color: red;
+}
+25%{
+    translate: 0 400px;
+    rotate: 90deg;
+    background:linear-gradient(to left,red,blueviolet);
+}
+50%{
+    translate: 700px 400px;
+    rotate: 180deg;
+    background-color: blueviolet;
+}
+75%{
+     translate: 700px 0px;
+    rotate: 270deg;
+    background:linear-gradient(to left,red,blueviolet);
+}
+100%{
+     translate: 0px 0px;
+    rotate: 360deg;
+    background-color:blueviolet;
+}
+}
+
+.all{
+    width: 800px;
+    height: 500px;
+    margin: 250px auto;
+    /* background-color: aqua; */
+    text-align: center;
+    line-height: 500px;
+    /* padding: 0px 100px; */
+}
